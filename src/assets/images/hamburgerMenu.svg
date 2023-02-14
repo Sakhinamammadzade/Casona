@@ -1,0 +1,5 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class=" fm-icon fill" width="20"  height="20" ><defs><symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" id="ico_hamburger">
+<path d="M2.5 4h9c.28 0 .5-.22.5-.5s-.22-.5-.5-.5h-9c-.28 0-.5.22-.5.5s.22.5.5.5zm0 4h7c.28 0 .5-.22.5-.5S9.78 7 9.5 7h-7c-.28 0-.5.22-.5.5s.22.5.5.5zm9 3h-9c-.28 0-.5.22-.5.5s.22.5.5.5h9c.28 0 .5-.22.5-.5s-.22-.5-.5-.5z" fill-rule="evenodd" clip-rule="evenodd"></path>
+</symbol></defs>
+<use xlink:href="#ico_hamburger"></use>
+</svg>

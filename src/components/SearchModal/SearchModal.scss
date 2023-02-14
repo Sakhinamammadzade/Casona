@@ -1,0 +1,150 @@
+@import '../../vendors/mixins';
+@import '../../vendors/variables';
+
+
+.search-open{
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+.search-modal-field{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    background-color: $white;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 999;
+    overflow: hidden;
+    transition: opacity 0.3s cubic-bezier(0.4, 0, 0.6, 1), visibility 0.3s cubic-bezier(0.4, 0, 0.6, 1);
+    @media(max-width:1024px){
+        top: 0;
+    }
+    .search-modal-header{
+        justify-content: center;
+        border: none;
+        flex-direction: column-reverse;
+        padding: 0 15px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        width: 100%;
+        max-width: 1440px;
+        display: flex;
+        flex-direction: column;
+        .x-button{
+            line-height: 24px;
+            padding: 0;
+            border-radius: 3px; 
+            background: 0 0 !important;
+            border: none !important;
+            font-size: .75rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 500;
+            cursor: pointer;
+            margin: 0;
+            font-family: inherit;  
+            margin-top: 60px;
+            margin-bottom: 80px;
+            opacity: 1;
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+            margin: 30px 0 30px auto;
+            padding: 10px 0;
+            span{
+                display: flex;
+                align-items: center;
+                flex-direction: row-reverse;
+                .button-x{
+                    margin-left: 3px;
+                    vertical-align: middle;
+                }
+                .button-title{
+                    display: inline-block;
+                    font-weight: 400;
+                    font-size: 10px;
+                    text-transform: uppercase;
+                }
+            }            
+        }               
+        p{
+            font-family: $main-font;
+            margin-bottom: 25px;
+            font-size: 20px;
+            @media(max-width: 1024px){
+                font-size: 14px;
+                font-family: $main-fontl;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .search-modal-bottom{
+        display: flex;
+        max-width: 1410px;
+        margin: 0 auto;
+        position: relative;
+        @media(max-width:1024px){
+            max-width: 98%;
+        }
+        .search-modal-bottom-content{
+            width: 100%;
+            justify-content: center;
+            display: flex;
+            input{
+                color: $light-gray;
+                width: 100%;
+                border-width: 0 0 2px;
+                border-color: $light-gray;
+                font-size: 16px;
+                padding: 10px 0;
+                line-height: 30px;
+                background: $white !important;
+                z-index: 111;
+                -webkit-border-radius: 0;
+                -moz-border-radius: 0;
+                border-radius: 0;
+                outline: none !important;
+                -webkit-box-shadow: none !important;
+                box-shadow: none !important;
+                font-size: 32px;
+                height: 68px;
+                padding: 0 0 15px;
+                @media(max-width: 1024px){
+                    height: 50px;
+                    font-size: 16px;
+                }
+            }
+            button{
+                position: absolute;
+                right: 0;
+                bottom: 35%;
+                background: 0 0;
+                color: $light-gray;
+                z-index: 999;
+                padding-right: 5px;
+                letter-spacing: 0;
+                outline: 0;
+                border: 0;
+                cursor: pointer;
+                svg{
+                    width: 30px;
+                    height: 30px;
+                    vertical-align: middle;
+                    fill: $light-gray;
+                    @media(max-width:1024px){
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.sidebar-button-text:hover{
+    color: $main-blue !important;
+}

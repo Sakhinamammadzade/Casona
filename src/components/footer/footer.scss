@@ -1,0 +1,110 @@
+@import "../../vendors/mixins";
+@import "../../vendors/variables";
+footer{
+    height: 84px;
+    left: 0px;
+    border-style: solid;
+    border-width: 1px 0 0;
+    border-color: $border-white;
+    transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+    padding: 10px 15px;
+    @media( max-width: 1024px){
+        footer{
+            height: 64px !important;
+        }
+    }
+    @media( max-width: 767px){
+        footer{
+            height: 218px !important;
+        }
+    }
+    .footer-container{
+        max-width: 1470px;
+        margin: 0 auto;
+        .footer-content{
+            display: flex;
+            .footer-element{
+                width: 33.3%;
+                padding: 15px;
+                display: flex;
+                align-items: center;
+                .footer-logo{
+                    filter: invert(1);
+                    max-width: 110px;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .footer-navbar{
+                @include navbarFont;
+                display: flex;
+                justify-content: center;
+                ul{
+                    display: flex;
+                    gap: 30px;
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    a{
+                        text-decoration: none;
+                        color: $black ;
+                        &:hover{
+                            color: $main-blue;
+                        }
+                        @media( max-width: 767px){
+                            &:hover{
+                                text-decoration: revert;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer-icons{
+                display: flex;
+                gap: 12px;
+                justify-content: flex-end;
+                #behance{
+                    font-size: 19px;
+                }
+                @media( max-width: 767px){
+                    justify-content: center;
+                    display: flex;
+                }
+                .icons-element{
+                    border-radius: 50%;
+                    background-color: $black;
+                    width: 34px;
+                    height: 34px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: $main-blue;
+                    }
+                    a{
+                        svg{
+                            fill: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media( max-width: 767px){
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 45px 0 35px;
+        .footer-element{
+            width: 100% !important; 
+            padding: 6px !important;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

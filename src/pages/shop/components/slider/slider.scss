@@ -1,0 +1,152 @@
+@import '../../../../vendors/responsive.scss';
+#Slider{
+  .swiper{
+    position: relative;
+    width: 65%;
+    height: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+    padding-top: 260px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: transparent;
+
+    @include responsive(smartphone-potrait){
+      width:70%;
+      padding-top: 120px;
+    
+    }
+    @include responsive(smallSize){
+      height: 30%;
+      width: 68%;
+      padding-top:140px;
+    }
+    @include responsive(mediumSize){
+      height: 20%;
+      width: 68%;
+      padding-top:140px;
+    }
+    @include responsive(smartphone-landscape){
+       padding-top:110px;
+       width:70%
+       
+      }
+      @include responsive(tablet){
+        padding-top:170px;
+        width:80%
+        
+    }
+    @include responsive(laptop){
+      padding-top: 180px;
+      width: 80%;
+    }
+    @include responsive(desktop){
+      padding-top: 220px;
+      width: 80%;
+    }
+
+  
+   //border-radius: 3mm;
+  .swiper-button-next,.swiper-button-prev{
+    background-color: transparent;
+    margin-top: 100px;
+    margin-left: 20px;
+    color: #fff;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    font-size: 12px;
+    transition: .5s ease-out;
+
+     &:hover{
+      color: rgba(0, 0, 0, 0.848);
+     
+    }
+  }
+ 
+  // .swiper-button-next{
+  //  left: calc(100% - 60px);
+  //  top: calc((100% - 265px));
+  //  @include responsive(smallSize){
+  //    top: calc((100% - 170px));
+
+  //   left: calc(100% - 55px);
+  //   font-size:10px;
+  // }
+  // @include responsive(mediumSize){
+  //   top: calc((100% - 245px));
+  //   left: calc(100% - 58px);
+  // }
+  // @include responsive(smartphone-landscape){
+  //   top: calc((100% - 230px));
+  //   left: calc(100% - 58px);
+ 
+  // }
+  
+  // }
+  // .swiper-button-prev{
+  //   left: calc(100% - 878px);
+  //   top: calc((100% - 265px));
+  //   width: 30px;
+  //  }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: transparent;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      border-radius: 2mm;
+      .slide-content{
+      img {
+          display: block;
+          width:100%;
+          height: 60%;
+          background-color:#fff;
+          object-fit: cover;
+          border-radius: 2mm;
+          clip-path: circle(100%);
+          @include responsive(smartphone-landscape){
+              width:80%;
+             
+            }
+         
+         }
+         h6{
+          color: rgb(255, 255, 255);
+          font-size: 16px;
+          font-weight: 500;
+          @include responsive(smallSize){
+            font-size: 12px;
+           }
+           @include responsive(mediumSize){
+            font-size: 12px;
+           }
+           @include responsive(smartphone-landscape){
+             font-size:12px;
+             
+            }
+         }
+        }
+    }
+  }
+ }
+  
+
+
+
+
+
+
+
+

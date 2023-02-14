@@ -1,0 +1,38 @@
+@mixin responsive($breakpoint){
+    @if $breakpoint==smallSize{
+        @media only screen and (min-width:0px) and (max-width:500px){
+            @content;
+        }
+    }
+    @if $breakpoint==mediumSize{
+        @media only screen and (min-width:500px) and (max-width:575px){
+            @content;
+        }
+    }
+    @if $breakpoint==smartphone-potrait{
+        @media only screen and (max-width:575.98px){
+            @content;
+        }
+    }
+    @if $breakpoint==smartphone-landscape{
+        @media  only screen and (min-width:575px) and (max-width:767.98px){
+         @content;
+            
+        }
+    }
+    @if $breakpoint==tablet{
+        @media only screen and (min-width:767.98px) and (max-width:991.98px){
+            @content;
+        }
+    }
+    @if $breakpoint==laptop{
+        @media only screen and (min-width:991.98px) and (max-width:1023.98px){
+            @content;
+        }
+    }
+    @if $breakpoint==desktop{
+        @media only screen and (min-width:1023.98px) and (max-width:1199.98px){
+            @content
+        }
+    }
+}

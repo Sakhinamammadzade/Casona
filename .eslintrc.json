@@ -1,0 +1,144 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["react-hooks", "prettier", "eslint-plugin-sort-imports-es6-autofix", "unused-imports"],
+  "extends": [
+    "react-app",
+    "react-app/jest",
+    "eslint:recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended",
+    "plugin:jsx-a11y/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "settings": {
+    "react": {
+      "version": "17.0.2"
+    },
+    "import/resolver": {
+      "webpack": {
+        "config": "craco.config.js"
+      }
+    }
+  },
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "project": "./tsconfig.json",
+    "ecmaFeatures": {
+      "jsx": true,
+      "globalReturn": false
+    }
+  },
+  "rules": {
+    "semi": ["error", "always"],
+    "jsx-a11y/heading-has-content": [ 2, {
+      "components": [ "MyHeading" ]
+   }],
+    "prettier/prettier": "warn",
+    "no-duplicate-imports": [
+      "error",
+      {
+        "includeExports": true
+      }
+    ],
+    "eqeqeq": "error",
+    "sort-imports-es6-autofix/sort-imports-es6": [
+      1,
+      {
+        "ignoreCase": false,
+        "ignoreMemberSort": false,
+        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
+      }
+    ],
+   
+    "no-console": [
+      "warn",
+      {
+        "allow": ["warn", "error", "debug", "info"]
+      }
+    ],
+    "no-unreachable": "warn",
+    "no-unused-vars": "off",
+    "jsx-a11y/no-autofocus": "off",
+    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/prefer-for-of": "warn",
+    "@typescript-eslint/prefer-readonly": "warn",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "unused-imports/no-unused-imports": "warn",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "@typescript-eslint/naming-convention": [
+      "warn",
+      {
+        "selector": "default",
+        "format": ["camelCase"]
+      },
+      {
+        "selector": "variableLike",
+        "leadingUnderscore": "allow",
+        "format": ["camelCase", "PascalCase"]
+      },
+      {
+        "selector": "memberLike",
+        "format": ["camelCase"]
+      },
+      {
+        "selector": "typeLike",
+        "format": ["PascalCase"]
+      },
+      {
+        "selector": "enumMember",
+        "format": ["PascalCase", "UPPER_CASE"]
+      },
+      {
+        "selector": "variable",
+        "leadingUnderscore": "allow",
+        "format": ["camelCase", "PascalCase"]
+      },
+      {
+        "selector": "variable",
+        "types": ["boolean", "array"],
+        "format": ["camelCase"]
+      },
+      {
+        "selector": "variable",
+        "types": ["string", "number"],
+        "format": ["camelCase", "UPPER_CASE"],
+        "leadingUnderscore": "allow"
+      },
+      {
+        "selector": "property",
+        "leadingUnderscore": "allow",
+        "format": ["camelCase", "UPPER_CASE", "PascalCase"]
+      },
+      {
+        "selector": "objectLiteralProperty",
+        "leadingUnderscore": "allow",
+        "format": null
+      },
+      {
+        "selector": "accessor",
+        "leadingUnderscore": "allow",
+        "format": ["camelCase", "PascalCase"]
+      },
+      {
+        "selector": "function",
+        "format": ["camelCase", "PascalCase"]
+      }
+    ],
+    "@typescript-eslint/explicit-member-accessibility": ["error"],
+    "@typescript-eslint/no-inferrable-types": "off",
+    "no-debugger": "warn"
+  }
+}

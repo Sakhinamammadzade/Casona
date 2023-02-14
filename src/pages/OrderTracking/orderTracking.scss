@@ -1,0 +1,111 @@
+@import "../../vendors/variables";
+@import "../../vendors/mixins";
+
+.error-open{
+    display: flex !important;
+}
+.order-tracking-field{
+    min-height: 500px;
+    .order-tracking-container{
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 30px;
+        .order-tracking-contents{
+            padding: 45px 15px;
+            .order-tracking-content{
+                max-width: 800px;
+                margin: 0 auto;
+                .order-tracking-content-error{
+                    display: none;
+                    padding: 0.5rem 1rem;
+                    border-style: solid;
+                    border-width: 0 0 0 2px;
+                    line-height: 1.5;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-color: #aa0000;
+                    margin: 0 0 2em;
+                    position: relative;
+                    background-color: #f7f6f7;
+                    color: $black;
+                    font-family: $main-fonta;
+                    height: fit-content;
+                    p{
+                        margin: 0;
+                    }
+                }
+                .order-tracking-content-title{
+                    font-family: $main-fonta;
+                    color: $light-gray;
+                    margin-bottom: 40px;
+                }
+                .order-tracking-content-inputs{
+                    display: flex;
+                    position: relative;
+                    gap: 40px;
+                    @media(max-width: 640px){
+                        display: flex;
+                        gap: 0;
+                        flex-direction: column;
+                    }
+                    .input-orderid{
+                        position: relative;
+                        width: 50%;
+                        @media(max-width: 640px){
+                            width: 100%;
+                        }
+                        label{
+                            width: 100%;
+                        }
+                        span{
+                            position: absolute;
+                            margin: 0;
+                            background: $white;
+                            padding: 0 10px;
+                            line-height: 20px;
+                            z-index: 1;
+                            transform: translateY(-50%);
+                            left: 2%;
+                            top: -3px;
+                            font-family: $main-fonta;
+                        }
+                        input{
+                            vertical-align: middle;
+                            padding: 0 20px;
+                            height: 50px;
+                            max-width: 100%;
+                            border: 1px solid #ebebeb;
+                            background-color: transparent;
+                            font-size: 14px;
+                            width: 100%;
+                            border-radius: 3%;
+                        }
+                    }
+                }
+                .order-tracking-content-button{
+                    margin-top: 4px;
+                    button{
+                        border: 0;
+                        outline: 0;
+                        border-radius: 3px;
+                        width: 100%;
+                        padding: 13px 20px;
+                        font-size: 0.75rem;
+                        line-height: 24px;
+                        letter-spacing: 2px;
+                        text-transform: uppercase;
+                        background-color: $black;
+                        color: $white;
+                        font-family: $main-font;
+                        cursor: pointer;
+                        transition: 1.1s;
+                        &:hover{
+                            background-color: $main-blue;
+                            transition: 1.1s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

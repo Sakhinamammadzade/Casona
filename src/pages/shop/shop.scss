@@ -1,0 +1,461 @@
+@import '../../vendors/variables';
+@import '../../vendors/responsive.scss';
+
+
+.shop {
+    height: max-content;
+       
+        .shopControl {
+            width: 95%;
+            margin: auto;
+            margin-top: 50px;
+            @include responsive(smartphone-potrait){
+                
+                margin-top: 20px;
+             }
+
+            .filtering {
+               width: 120px;
+                padding: 9px 8px;
+                background-color: $main-blue;
+                border-radius: 1mm;
+                transition: .2s ease;
+                position: relative;
+                @include responsive(smartphone-potrait){
+                    display: none;
+                }
+                @include responsive(smartphone-landscape){
+                    display: none;
+                  
+                   }
+
+                #filterList{
+                    position: absolute;
+                    background-color: #fff;
+                    top: 100%;
+                    left: 0%;
+                    padding-top: 50px;
+                    margin-top: 30px;
+                    width: 75rem;
+                    height: 550px;
+                    border: 1px solid rgb(96, 12, 12);
+                    opacity: 0;
+                    visibility: hidden;
+                    z-index: 1000;
+                    display: block;
+                    @include responsive(laptop){
+                       width: 58rem;
+                      
+                   }
+                   @include responsive(desktop){
+                    width: 65rem;
+                   
+                    }
+                    @include responsive(smartphone-potrait){
+                      display: none;
+                    
+                     }
+                     @include responsive(smartphone-landscape){
+                        display: none;
+                      
+                       }
+                       @include responsive(tablet){
+                        width: 50rem;
+                        height: 800px;
+                      
+                       }
+
+                    .closefilter {
+                        position: relative;
+                        .closeIcon,
+                        span {
+                            position: absolute;
+                            left: 0;
+                        }
+
+                        span {
+                            padding-left: 15px;
+                            font-size: 12px;
+                        }
+                    }
+
+                    &.active {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+
+                    h4 {
+                        font-weight: 500;
+                        font-size: 20px;
+                        text-transform: capitalize;
+                        text-align: start;
+                        padding-bottom: 10px;
+                        margin-bottom: 2rem;
+                        position: relative;
+                        border-bottom: 1px solid #ebebeb;
+                        letter-spacing: 0;
+
+                        &::before {
+                            position: absolute;
+                            left: 0;
+                            top: 100%;
+                            content: '';
+                            background-color: black;
+                            width: 50px;
+                            height: 2.5px;
+                        }
+                    }
+                    .productCategories{
+                     
+                        height: 330px;
+                        position: relative;
+                       .categoryList{
+                        position: absolute;
+                        left: 0;
+                        .menuList{
+                            margin: 0;
+                            padding: 0;
+                            .digital{
+                                
+                                .icon{
+                                    font-size: 15px;
+                                    width: 0;
+                                    height: 0;
+                                    padding: 0;
+                                    padding-top: 5px;
+                                }
+                                #subMenu{
+                                    opacity: 0;
+                                    visibility: hidden;
+                                    margin: 0;
+                                    height: 0;
+                                    padding: 0;
+                                    line-height: 0;
+                                    &.active{
+                                       opacity: 1;
+                                       visibility: visible;
+                                       height: 30px;
+                                    }
+                                }
+                            }
+                            li{
+                                list-style: none;
+                                margin-left: 0;
+                                
+                                margin-left: 0;
+                                a{
+                                     text-decoration: none;
+                                      margin-bottom: 0 !important;
+                                      display: inline-block;
+                                        margin-left: 0;
+                                        padding-left: 0;
+                                        padding: 0;
+                                        font-size: 1rem;
+                                        font-weight: 400;
+                                        color: #000000;
+                                        margin:10px 0px ;
+                                }
+                            }
+                        }
+                       }
+                    }
+
+                    .productTags {
+                      
+                        height: 330px;
+
+                        .btn{
+                            margin: 0 5px 5px 0;
+                            font-size: 14px;
+                            padding: 8px 15px;
+                            width: auto;
+                            color: gray;
+                            border: 1px solid rgb(232, 229, 229);
+                            transform: .3s ease;
+
+                            &:hover {
+                                color: black;
+                                border: 1px solid black;
+                            }
+                        }
+                    }
+
+                    .productColor {
+                     
+                        height: 330px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        flex-direction: row;
+                        margin-right: 30px;
+                         button {
+                            border-radius: 100mm;
+                            margin: 10px;
+                            width: 27px;
+                            height: 27px;
+                            outline: none;
+                            &:nth-child(1){
+                                background-color: red;
+                            }
+                            &:nth-child(2){
+                                background-color: black;
+                            }
+                            &:nth-child(3){
+                                background-color: pink;
+                            }
+                            &:nth-child(4){
+                                background-color: white;
+                            }
+                            &:nth-child(5){
+                                background-color: yellowgreen;
+                            }
+                            &:nth-child(6){
+                                background-color: yellow;
+                            }
+                            &:nth-child(7){
+                                background-color: purple;
+                            }
+                            &:nth-child(8){
+                                background-color: orange;
+                            }
+                            &:nth-child(9){
+                                background-color: goldenrod;
+                            }
+                            &:nth-child(10){
+                                background-color: olive;
+                            }
+                            &:nth-child(11){
+                                background-color: grey;
+                            }
+                            &:nth-child(11){
+                                background-color: palevioletred;
+                            }
+                           
+                            
+                        
+                      }
+                    }
+
+                    .productSize {
+                         height: 180px;
+
+                        .btnGroups {
+                            display: flex;
+                            flex-wrap: wrap;
+
+
+                            button {
+                                border: 1px solid rgb(232, 229, 229);
+                                margin: 10px 5px;
+                                color: grey;
+                                transform: .3s ease;
+
+                                &:hover {
+                                    color: black;
+                                    border: 1px solid black;
+                                }
+
+                            }
+
+                            .medium {
+                                margin: 0 5px 5px 0;
+                                font-size: 14px;
+                                padding: 5px 15px;
+                                width: auto;
+                            }
+
+                            .large,
+                            .small {
+                                width: auto;
+                                margin: 0 8px 8px 0;
+                                font-size: 14px;
+                                padding: 5px 15px;
+                                text-transform: capitalize;
+                                line-height: 29px;
+                                background: none;
+                                height: 40px;
+                                min-width: 40px;
+                            }
+                        }
+                    }
+
+                    .filterBySize {
+                       
+                        height: 330px;
+                     
+                        .filterbtn{
+                            padding: 5px 20px;
+                            border: none;
+                            outline: none;
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: flex-end;
+                            background-color: $black;
+                            transition: .3s ease;
+                            span{
+                                color: #fff;
+                            }
+                            &:hover{
+                                background-color: $bs-link-color
+                                ;
+                            }
+                            .filter-price{
+                                color: grey;
+                                font-weight: 400;
+                            }
+                        }
+                 
+
+
+                        .slider1 {
+                            color: black;
+                           
+                        }
+                    }
+                }
+
+
+                &:hover {
+                    background-color: $filterHoverBg;
+                    p{
+                        color: #fff;
+                    }
+                }
+
+                .filterDropdown {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+
+                    span {
+                        display: inline-block;
+                        color: #fff;
+                        font-size: 12px;
+                        font-weight: 300;
+                        margin-left: 10px;
+
+                    }
+
+                    .filterIco {
+                        color: #fff;
+                        font-size: 23px;
+                    }
+                }
+            }
+
+            .results {
+                p {
+                    color: $shopControlText;
+                    font-weight: 500;
+                    font-size: 16px;
+                }
+            }
+
+            .card-view {
+                display: flex;
+                gap: 14px;
+
+                button {
+                    border: none;
+                    background-color: #fff;
+                    .grid {
+                        color: $shopControlText;
+                        font-size: 18px;
+                        transition: .2s ease;
+
+                        &:hover {
+                            color: $bs-link-color;
+
+                        }
+                    }
+                }
+            }
+
+            .sort {
+                .default-sorting {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    position: relative;
+                    border: 1px solid;
+                    border-color: $shopControlText;
+                    width: 160px;
+                    height: 50px;
+                    padding: 5px 10px;
+                    transition: .3s ease;
+                    z-index: 1000000;
+                    position: relative;
+
+                    &:hover {
+                        p {
+                            color: $main-blue;
+                        }
+                    }
+
+                    p {
+                        color: $shopControlText;
+                        font-size: 14px;
+                        font-weight: 400;
+
+                    }
+
+                    .rightIco {
+                         position: absolute;
+                         top: 23%;
+                         left: 80%;
+
+                        font-size: 15px;
+                        transform: rotate(90deg);
+                        padding-top: 0px;
+                       
+
+                    }
+
+                    #sortingList {
+                        position: absolute;
+                        width: 120%;
+                        top: 85%;
+                        left: 0%;
+                        background-color: #fff;
+                        border-radius: 2mm;
+                        border: 1px solid rgb(196, 195, 195);
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: .5s ease;
+
+                        &.active {
+                            opacity: 1;
+                            visibility: visible;
+
+                        }
+
+                        .item {
+                            width: 100%;
+                            
+                            p {
+                                padding: 15px;
+                                margin-top: 0px;
+
+                                &:hover {
+                                    background-color: rgb(224, 221, 221);
+                                }
+                            }
+                        }
+
+                        p {
+                            font-size: 15px;
+                            width: 100%;
+                            padding: 15px 10px;
+                            margin: 0;
+                            color: black;
+
+                            &:hover {
+                                background-color: rgb(224, 221, 221);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+}

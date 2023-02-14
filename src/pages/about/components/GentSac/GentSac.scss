@@ -1,0 +1,38 @@
+@import "../../../../vendors/variables";
+@import "../../../../vendors/mixins";
+
+.Gentsac-field{
+    width: 100%;
+    margin-top: 65px;
+    margin-bottom: 0;
+    @media (max-width: 1024px){
+        margin-top: 45px;
+        margin-bottom: 0;
+    }
+    @media (max-width: 767px){
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .Gentsac-container{
+        max-width: 1430px;
+        margin: 0 auto;
+        padding: 15px 15px 0px;
+        @media (max-width: 1024px){
+            height: 550.15px;
+        }
+        @media (max-width: 768px){
+            width: 100%;
+        }
+        .Gentsac-item{
+            width: 100%;
+            overflow: hidden;
+            @media (max-width: 768px){
+                width: 100%;
+            }
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}

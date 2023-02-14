@@ -1,0 +1,34 @@
+@import "../../../../vendors/variables";
+@import "../../../../vendors/mixins";
+
+.Services-field{
+    width: 100%;
+    height: 350px;
+    transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+    margin-top: 60px;
+    margin-bottom: 0;
+    padding: 115px 15px 125px;
+    background-image: url(../../../../assets/images/servicesBackground.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    @media(max-width: 1024px){
+        padding: 65px 15px 70px
+    }
+    @media(max-width: 767px){
+        height: 533px;
+        padding: 50px 15px;
+    }
+    .Services-items{
+        display: flex;
+        max-width: 1440px;
+        margin: 0 auto;
+        @media(max-width: 767px){
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

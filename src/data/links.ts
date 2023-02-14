@@ -1,0 +1,40 @@
+let links=[
+  {
+    id:1,
+    name:'Bosch'
+  },
+  {
+    id:2,
+    name:'Corkcicle'
+  },
+  {
+    id:3,
+    name:'Handmade'
+  },
+  {
+    id:4,
+    name:'Kinto'
+  },
+  {
+    id:5,
+    name:'Lether'
+  },
+  {
+    id:6,
+    name:'Lifestyle'
+  },
+  {
+    id:7,
+    name:'Orbitkey'
+  },
+  {
+    id:8,
+    name:'Pet'
+  },
+  {
+    id:9,
+    name:'Soma'
+  }
+
+]
+export default links;

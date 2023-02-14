@@ -1,0 +1,44 @@
+@import "../../../../vendors/variables";
+@import "../../../../vendors/mixins";
+
+.Aservices-item {
+    width: 33.333%;
+    @media (max-width: 767px){
+        width: 100%;
+    }
+    .Aservices-item-container{
+        transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+        padding: 50px 15px;
+        margin: 0 100px;
+        text-align: center;
+        @media (max-width: 1024px){
+            padding: 15px;
+            margin: 0;
+        }
+        @media (max-width: 767px){
+            width: 100%;
+        }
+        .Aservices-item-img {
+            img {
+                @media(max-width: 1024px){
+                    width: 55px;
+                    height: 37px;
+                }
+            }
+        }
+        .Aservices-item-content {
+            p {
+                font-family: $main-fonta;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 1.5em;
+                color: $white;
+                @media (max-width: 1024px){
+                    margin: 5px;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}

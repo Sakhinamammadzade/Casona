@@ -1,0 +1,77 @@
+@import "../../../../vendors/variables";
+
+.Aservices-field {
+    width: 100%;
+    height: 670.8px;
+    background-image: url(../../../../assets/images/aservicesbackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+    padding: 125px 0 150px;
+    @media (max-width: 1024px){
+        padding: 65px 0;
+        height: 327.8px;
+    }
+    @media(max-width: 767px){
+        padding: 50px 0 45px;
+        height: 481px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Aservices-container{
+        max-width: 1470px;
+        margin-right: auto;
+        margin-left: auto;
+        @media (max-width: 1024px){
+            width: 100%;
+            height: 197.8px;
+        }
+        .Aservices-title {
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            @media (max-width: 1024px){
+                max-width: 1024px;
+            }
+            @media(max-width: 767px){
+                max-width: 767px;
+                width: 100%;
+            }
+            span {
+                margin-bottom: 73px;
+                font-family: $main-fonta;
+                font-size: 36px;
+                font-weight: 400;
+                line-height: 31px;
+                color: white;
+                @media (max-width: 1024px){
+                    margin-bottom: 40px;
+                    font-size: 28px;
+                }
+                @media(max-width: 767px){
+                    margin-bottom: 0;
+                    line-height: 1.2em;
+                }
+            }
+        }
+        .Aservices-items {
+            width: 100%;
+            display: flex;
+            @media (max-width: 1024px){
+                max-width: 1024px;
+            }
+            @media(max-width: 767px){
+                max-width: 767px;
+                width: 100%;
+                flex-direction: column;
+            }
+        }
+    }
+}

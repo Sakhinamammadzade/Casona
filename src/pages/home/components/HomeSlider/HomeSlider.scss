@@ -1,0 +1,156 @@
+@import '../../../../vendors/variables';
+@import '../../../../vendors/mixins';
+
+.home-slider-field{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    @media( max-width: 767px){
+        max-width: 750px;
+        height: 350px;
+        position: relative;
+        overflow: hidden;
+    }
+    .home-slider-container{
+        height: 100%;
+        max-width: 1470px;
+        margin: 0 auto;
+        padding-left: 23px;
+        padding-right: 36px;
+        .hslider-buttons{
+            display: flex;
+            gap: 10px;
+            position: absolute;
+            bottom: 0;
+            margin-left: 5px;
+            margin-bottom: 65px;
+            z-index: 2;
+            @media(max-width: 1024px) {
+            position: absolute;
+            bottom: 0;
+            margin-left: 3px;
+            margin-bottom: 33px;
+            z-index: 2;
+            }
+            .hslider-button{
+                border: 0;
+                width: 39px;
+                height: 39px;
+                font-size: 9px;
+                color: $black;
+                background-color: $white;
+                border-radius: 50%;
+                cursor: pointer;
+                @media(max-width: 767px) {
+                    margin-left: 2%;
+                    margin-bottom: -2%;
+                }
+                &:hover{
+                    background-color: $black;
+                    svg{
+                        fill: $white;
+                    }
+                }
+                svg{
+                    width: 1.5em;
+                    height: 4em;
+                    fill: black;
+                }
+            }
+        }
+        .hslider-part{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            .hslider-img{
+                width: 35%;
+                position: relative;
+                z-index: 1;
+                @media(max-width: 1024px){
+                    // transform: translateX(-177px) translateY(-77px) translateZ(0px) !important;
+                    margin-top: -19%; 
+                    margin-left: 10%;
+                }
+                @media(max-width: 767px){
+                    // transform: translateX(-177px) translateY(-77px) translateZ(0px) !important;
+                    position: absolute;
+                    left: 22%;
+                    bottom: -102px;
+                }
+                img{
+                    @media(max-width: 1024px) {
+                        height: 693px;
+                    }
+                    @media(max-width: 767px) {
+                        height: 464px;
+                    }
+                }
+            }
+            .hslider-content{
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                z-index: 3;
+                width: 40%;
+                @media(max-width: 1024px){
+                    width: 100%;
+                    margin-top: -6%;
+                    margin-left: -1.5%;
+                }
+                @media(max-width: 1024px){
+                    margin-top: 8%;
+                    margin-left: -0.5%;
+                }
+                .hslider-p1{
+                    margin-bottom: 40px;
+                    color: $white;
+                    font-family: $main-fontl;
+                    font-size: 60px;
+                    font-weight: 300;
+                    line-height: 1.3em;
+                    @media(max-width: 1024px){
+                        font-size: 42px;
+                        // margin-top: -15px;
+                        // margin-left: -19px;
+                    }
+                    @media(max-width: 767px){
+                        font-size: 30px;
+                        margin: 0;
+                    }
+                }
+                .hslider-p2{
+                    margin-top: 0;
+                    margin-bottom: 1rem;
+                    margin-bottom: 40px;
+                    color: $white;
+                    font-family: $main-fontl;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 25px;
+                    @media(max-width: 767px){
+                        margin: 15px 0;
+                    }
+                }
+                .hslider-button{
+                    width: 165px;
+                    height: 45px;
+                    border-radius: 50px;
+                    background-color: $white;
+                    cursor: pointer;
+                    border: 0;
+                    outline: 0;
+                    a{
+                        font-family: $main-font;
+                        font-size: 12px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        letter-spacing: 4px;
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class=" fm-icon fill" width="80"  height="80" ><defs><symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 21" id="ico_cart_empty">
+<path d="M11 4v-.7C11 1.5 9.5 0 7.6 0S4.3 1.5 4.3 3.3V4h-4v16.1H15V4h-4zm-5.4-.7c0-1.1.9-2 2-2s2 .9 2 2V4h-4v-.7zm8.1 15.5H1.6V5.4h2.7v2h1.3v-2h4v2H11v-2h2.7v13.4z"></path>
+<path d="M5.5 14.9l-.7-.7 5-5 .7.7-5 5z"></path>
+<path d="M4.8 9.9l.7-.7 5 5-.7.7-5-5z"></path>
+</symbol></defs>
+            <use xlink:href="#ico_cart_empty" fill="#979797"></use>
+        </svg>

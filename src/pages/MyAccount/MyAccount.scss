@@ -1,0 +1,161 @@
+$main-font: "GT Walsheim Pro Regular", Sans-serif;
+$focus-color: #2DBBF0;
+@mixin font($size, $family, $weight, $height) {
+  font-size: $size;
+  font-family: $family;
+  font-weight: $weight;
+  line-height: $height;
+}
+
+
+
+
+input[type=text]{
+  width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  ::placeholder{
+    font-family: $main-font;
+  }
+}
+
+input[type=text]:focus{
+  border: 2px solid $focus-color;
+}
+
+
+input[type=password]{
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    ::placeholder{
+      font-family: $main-font;
+    }
+  }
+  
+  input[type=password]:focus{
+    border: 2px solid $focus-color;
+  }
+  
+
+ 
+
+
+
+.btn {
+    height: 50px;
+    width: 19%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    background: #000;
+    border: none;
+    border-style: solid;
+    border-width: 0;
+    border-radius: 3px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: $focus-color;
+  transition: 0.6s;
+}
+
+.register-form {
+  border-radius: 5px;
+  background-color:#fbfbfb;
+  padding: 17%;
+}
+
+h1{
+  font-family: $main-font;
+}
+
+
+.invalid-feedback {
+  color: #9f181f;
+  font-size: smaller;
+  font-family: $main-font;
+}
+
+.privacy {
+    font-family: $main-font;
+    color: #a39d98;
+    width: auto;
+}
+
+.form-check-label{
+    font-family: $main-font;
+}
+
+
+
+// logout page
+
+.user-name{
+  color: #468199;
+}
+
+
+
+.forlogout-button {
+  height: 50px;
+  width: 19%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  background: #2c586b;
+  border: none;
+  border-style: solid;
+  border-width: 0;
+  border-radius: 3px;
+  margin-left: 40%;
+}
+
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+
+.forlogout-button:hover {
+cursor: pointer;
+// background-color: $focus-color;
+// transition: 0.6s;
+}
+
+.logoutdiv {
+  margin-top: 5%;
+}
+
+
+
+//mix
+
+.loggout{
+    margin-top: 5%;
+    margin-bottom: 6%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}

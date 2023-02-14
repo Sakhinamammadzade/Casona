@@ -1,0 +1,122 @@
+@import "../../../../vendors/variables";
+
+.Handcrafted-field{
+    width: 100%;
+    margin: 75px 0 0;
+    @media(max-width: 1024px){
+        margin: 50px 0 0;
+    }
+    @media(max-width: 767px){
+        margin: 45px 0 0;
+    }
+    .Handcrafted-container{
+        max-width: 1430px;
+        margin: 0 auto;
+        padding: 0 15px;
+        .Handcrafted-content{
+            display: flex;
+            flex-direction: column;
+            .Handcrafted-content-title{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                .Handcrafted-content-text1{
+                    max-width: 1024px;
+                    margin: 0 auto;
+                    margin-bottom: 25px;
+                    font-family: $main-fonta;
+                    font-weight: 400;
+                    @media(max-width: 1024px){
+                        width: 600px;
+                    }
+                    @media(max-width: 767px){
+                        margin-bottom: 0;
+                    }
+                    span {
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        font-size: 36px;
+                        line-height: 1.2em;
+                        color: $black;
+                        @media(max-width: 1024px){
+                            font-size: 30px;
+                        }
+                        @media(max-width: 767px){
+                            font-size: 26px;
+                        }
+                    }
+                    p {
+                        font-size: 22px;
+                        line-height: 36px;
+                        color: $more-gray;
+                        margin-top: 40px;
+                        @media(max-width: 1024px){
+                            margin-top: 28px;
+                            font-size: 15px;
+                            line-height: 1.6em;
+                        }
+                    }
+                }
+                .Handcrafted-content-text2{
+                    box-sizing: border-box;
+                    a {
+                        width: 81.83px;
+                        height: 36px;
+                        color: $black;
+                        border-style: solid;
+                        border-width: 0 0 2px;
+                        border-color: $black;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        box-shadow: none;
+                        text-decoration: none;
+                        &:hover {
+                            color: $ginger;
+                            border-color: $ginger;
+                        }
+                        &:focus {
+                            outline: none !important;
+                        }
+                        &:focus-visible {
+                            outline: $ginger auto 1px;
+                        }
+                        @media(max-width: 1024px){
+                            height: 32px;
+                        }
+                        span {
+                            font-family: "MaisonNeue-Medium",Sans-serif;
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 1em;
+                            transition: color .25s;
+                            @media(max-width: 1024px){
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+            .Handcrafted-content-cards{
+                margin-top: 100px;
+                margin-bottom: 0;
+                display: flex;
+                justify-content: space-between;
+                @media(max-width: 1024px){
+                    margin-top: 70px;
+                    margin-bottom: 0;
+                }   
+                @media(max-width: 767px){
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 50px;
+                    margin-bottom: 0;
+                    width: 100%;
+                }                   
+            }
+    }
+}

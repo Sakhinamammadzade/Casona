@@ -1,0 +1,50 @@
+@import 'variables';
+
+@mixin navbarFont {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@mixin buttonstyle{
+    outline: 0;
+    border: 0;
+    background: transparent;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+@mixin saleUpContent{
+    margin-top: 0;
+    color: $white;
+    font-family: $main-font;
+    font-weight: 400;
+    line-height: 1.375em;
+}
+
+@mixin dailyEssentialsLight{
+    color: #b4b4b4;
+    font-family:  $main-fontl;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1em;
+    letter-spacing: 4px;
+    margin-top: 0;
+}
+
+@mixin font($size, $family, $weight, $height) {
+    font-size: $size;
+    font-family: $family;
+    font-weight: $weight;
+    line-height: $height;
+}

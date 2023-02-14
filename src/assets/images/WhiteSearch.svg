@@ -1,0 +1,5 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class=" fm-icon fill" width="20"  height="20" ><defs><symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" id="ico_search">
+<path d="M21.73 19.508l-5.289-5.049c1.311-1.525 2.101-3.48 2.101-5.61C18.542 3.964 14.389 0 9.271 0 4.148 0 0 3.964 0 8.849c0 4.886 4.148 8.85 9.271 8.85 2.232 0 4.274-.75 5.873-2.001l5.288 5.044a.947.947 0 001.298 0 .842.842 0 000-1.234zm-12.459-3.57c-4.099 0-7.43-3.18-7.43-7.089 0-3.908 3.331-7.092 7.43-7.092 4.095 0 7.431 3.184 7.431 7.092 0 3.909-3.336 7.089-7.431 7.089z"></path>
+</symbol></defs>
+<use xlink:href="#ico_search" fill="#FFFFFF"></use>
+</svg>

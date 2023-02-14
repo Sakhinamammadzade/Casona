@@ -1,0 +1,5 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class=" fm-icon fill" width="20"  height="20" ><defs><symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 22" id="ico_cart">
+<path d="M19.014 15.714H5.23L3.33 2.095H0V0h5.098l.591 4.19H24l-4.986 11.524zm-12.01-2.095h10.685l3.171-7.334H5.985l1.019 7.334zm1.152 4.19c1.126 0 2.039.939 2.039 2.095 0 1.158-.913 2.096-2.039 2.096-1.126 0-2.039-.938-2.039-2.096 0-1.156.913-2.095 2.039-2.095zm8.157 0c1.126 0 2.039.939 2.039 2.095 0 1.158-.913 2.096-2.039 2.096-1.127 0-2.04-.938-2.04-2.096 0-1.156.913-2.095 2.04-2.095z"></path>
+</symbol></defs>
+<use xlink:href="#ico_cart" fill="#FFFFFF"></use>
+</svg>

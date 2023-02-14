@@ -1,0 +1,66 @@
+@import "../../../../vendors/variables";
+@import "../../../../vendors/mixins";
+
+.Hanpicked-field{
+    width: 100%;
+    margin-top: 75px;
+    margin-bottom: 0;
+    padding: 0 5px 0 15px;
+    .Hanpicked-container{
+        max-width: 1440px;
+        margin: 0 auto;
+        .Hanpicked-content{
+            display: flex;
+            flex-direction: column;
+            .Content-up{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .Content-title{
+                    font-family: $main-fonta;
+                    font-size: 30px;
+                    font-weight: 400;
+                    line-height: 1.2em;
+                    margin: 0;
+                }
+                .Divider-wrap{
+                    width: 80px;
+                    height: 1px;
+                    background-color: #dadada;
+                    margin: 15px 0 25px;
+                }
+                .Content-explore{
+                    font-family: $main-fontl;
+                    font-size: 12px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    line-height: 1em;
+                    letter-spacing: 4px;
+                    margin: 0;
+                    text-decoration: none;
+                    color: $light-gray;
+                    &:hover{
+                        color: $main-blue;
+                    }
+                }
+            }
+            .Content-bottom{
+                margin-top: 35px;
+                margin-bottom: 0;
+                .Hanpicked-card-up{
+                    display: flex;
+                    justify-content: space-between;
+                    @media(max-width: 767px){
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+                .Hanpicked-card-bottom{
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
