@@ -1,46 +1,63 @@
-# Getting Started with Create React App
+<h1 align="center"> E-commerce Website🛍️ </h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+###
 
-## Available Scripts
+<h2 align="left"> Main goal: </h2>
 
-In the project directory, you can run:
+###
 
-### `npm start`
+<ul>
+  <li> Build a eccomerce website with React / Typescript </li>
+  <li> Working with team </li>
+</ul>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<h2 align="left"> Overview: </h2>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+###
 
-### `npm test`
+<ul>
+  <li> Website's template: <a href="https://casona.familab.net/?header_style=header_1"> Link </a>  </li>
+  <li> Website's trello: <a href="https://trello.com/b/E0MrwsyL/casona"> Link </a> </li>
+  <li> Website's backend (NestJS): <a href="https://github.com/Sakhinamammadzade/nestJs"> Link </a> </li>
+</ul>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h2 align="left"> Contributors: </h2>
 
-### `npm run build`
+###
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+<ul>
+ <li>
+    <a href="https://github.com/Anrsgrl"> Anar A. </a>
+   <ul>
+     <li> Header (includes searchbar modal, hamburger aside and cart aside) </li>
+     <li> Footer </li>
+     <li> Home page (and it's all components) </li>
+     <li> Cart page </li>
+     <li> Wishlist page </li>
+     <li> Cart and Wishlist functions</li>
+   </ul>
+  </li>
+  <li>
+    <a href="https://github.com/Sakhinamammadzade"> Sakina M. </a>
+    <ul>
+     <li> Banner </li>
+     <li> Shop page </li>
+     <li> Backend of website </li>
+   </ul>
+  </li>
+  <li>
+    <a href="https://github.com/gunellst"> Gunel St. </a>
+    <ul>
+     <li> Order Tracking </li>
+     <li> About </li>
+   </ul>
+  </li>
+  <li>
+    <a href="https://github.com/mnargiz"> Nargiz M. </a>
+    <ul>
+     <li> My Account </li>
+     <li> Contact </li>
+   </ul>
+  </li>
+  
+</ul>
