@@ -29,12 +29,12 @@
  <li>
     <a href="https://github.com/Anrsgrl"> Anar A. </a>
    <ul>
-     <li> Header (includes searchbar modal, hamburger aside and cart aside) </li>
+     <li> Header </li>
      <li> Footer </li>
-     <li> Home page (and it's all components) </li>
+     <li> Home page  </li>
      <li> Cart page </li>
      <li> Wishlist page </li>
-     <li> Cart and Wishlist functions</li>
+    
    </ul>
   </li>
   <li>
@@ -43,6 +43,7 @@
      <li> Banner </li>
      <li> Shop page </li>
      <li> Backend of website </li>
+     <li>Web Api with Nest .js</li>
    </ul>
   </li>
   <li>
